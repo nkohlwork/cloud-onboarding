@@ -1,4 +1,4 @@
 steps:
 - name: 'ubuntu'
   entrypoint: 'bash'
-  args: ['-c', 'nslookup google.com']
+  args: ['-c', 'dig google.com +trace']
