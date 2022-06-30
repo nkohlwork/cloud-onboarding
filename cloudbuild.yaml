@@ -1,4 +1,4 @@
 steps:
 - name: 'ubuntu'
   entrypoint: 'bash'
-  args: ['-c', 'echo HEYO']
+  args: ['-c', 'echo build_id: $BUILD_ID location: $LOCATION']
