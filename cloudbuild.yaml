@@ -1,7 +1,7 @@
 steps:
 - name: 'ubuntu'
   entrypoint: 'bash'
-  args: ['-c', 'echo hey build_id: $BUILD_ID location: $LOCATION foo: $_FOO']
+  args: ['-c', 'echo hey build_id: $BUILD_ID location: $LOCATION foo: $_FOO bar: $_BAR']
 substitutions:
   _FOO: itsafoo
   _BAR: itsabar
