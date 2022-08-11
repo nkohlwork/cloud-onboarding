@@ -1,7 +1,5 @@
-steps:
-- name: 'ubuntu'
-  entrypoint: 'bash'
-  args: ['-c', 'echo hey build_id: $BUILD_ID location: $LOCATION foo: $_FOO bar: $_BAR']
-substitutions:
-  _FOO: itsafoo
-  _BAR: itsabar
+- name: 'bash'
+  args: ['echo', 'I am running in a private pool!']
+options:
+  pool:
+    name: 'projects/nkohl-test/locations/us-east4/workerPools/nkohl-pool'
