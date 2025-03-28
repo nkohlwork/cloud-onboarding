@@ -1,3 +1,6 @@
+options:
+  pool:
+    name: 'projects/nkohl-test/locations/us-east4/workerPools/nkohl-pool'
 steps:
 - name: 'ubuntu'
   entrypoint: 'bash'
